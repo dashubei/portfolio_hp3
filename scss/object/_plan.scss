@@ -1,0 +1,110 @@
+.plan {
+  padding-top: 80px;
+  .inner {
+
+  }
+}
+
+.rec {
+  padding-top: 60px;
+  .rec-slick {
+
+  }
+
+  .rec-item {
+    display: flex;
+    flex-flow: column-reverse;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 407px;
+    margin-left: 25px;
+    margin-right: 25px;
+    @include overTab {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    .text {
+      background-color: cl(white);
+      padding: 25px 25px 50px 25px;
+    }
+
+    .title {
+      color: cl(text);
+    }
+
+    .price {
+      padding-top: 60px;
+      > span {
+        color: cl(red);
+      }
+    }
+
+    .image {
+
+    }
+  }
+}
+
+  .service-wrap {
+    padding-top: 80px;
+    @include overTab {
+      padding-top: 100px;
+    }
+  }
+
+  .service-list {
+    margin-right: 26px;
+    margin-left: 27px;
+    @include overTab {
+      display: flex;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+
+  .service-item {
+    display: flex;
+    flex-flow: column-reverse;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 0.9;
+    // height: 387px;
+    @include overTab {
+      width: percentage(390 / 1220);
+    }
+    + .service-item {
+      margin-top: 30px;
+      @include overTab {
+        margin-top: 0;
+        margin-left: 20px;
+      }
+    }
+    .text {
+      margin-top: 3px;
+      margin-right: 24px;
+      margin-left: 24px;
+      margin-bottom: 74px;
+      + .text {
+        margin-top: 10px;
+      }
+    }
+
+    .title {
+      font-size: 28px;
+      color: cl(text);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .desc {
+      font-size: 18px;
+      color: cl(text);
+    }
+
+    .image {
+      width: 160px;
+      height: 160px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
